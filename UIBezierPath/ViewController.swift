@@ -25,6 +25,7 @@ class ZeddView: UIView {
     override func draw(_ rect: CGRect) {
         
         let center = CGPoint(x: rect.midX, y: rect.midY)
+        
         let colors = [UIColor.orange, UIColor.black, UIColor.systemGreen, UIColor.systemPink, UIColor.cyan, UIColor.systemTeal]
 
         let values: [CGFloat] = [10, 20, 70]
@@ -48,6 +49,20 @@ class ZeddView: UIView {
             colors.randomElement()?.set()
             path.fill()
             startAngle += endAngle
+            path.close()
+            
+            // slice space
+            UIColor.white.set()
+            path.lineWidth = 3
+            path.stroke()
         }
+        
+        let semiCircle = UIBezierPath(arcCenter: center,
+                                      radius: 40,
+                                      startAngle: 0,
+                                      endAngle: (360 * .pi) / 180,
+                                      clockwise: true)
+        UIColor.white.set()
+        semiCircle.fill()
     }
 }
