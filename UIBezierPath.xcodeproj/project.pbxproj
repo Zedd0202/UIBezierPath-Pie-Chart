@@ -13,6 +13,7 @@
 		146056C0233DBDBC00DC188E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146056BE233DBDBC00DC188E /* Main.storyboard */; };
 		146056C2233DBDBE00DC188E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146056C1233DBDBE00DC188E /* Assets.xcassets */; };
 		146056C5233DBDBE00DC188E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146056C3233DBDBE00DC188E /* LaunchScreen.storyboard */; };
+		14E42C1323472E5900D6C6FE /* CAShapeLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E42C1223472E5900D6C6FE /* CAShapeLayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		146056C1233DBDBE00DC188E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		146056C4233DBDBE00DC188E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146056C6233DBDBE00DC188E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E42C1223472E5900D6C6FE /* CAShapeLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAShapeLayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				146056B8233DBDBC00DC188E /* AppDelegate.swift */,
 				146056BA233DBDBC00DC188E /* SceneDelegate.swift */,
 				146056BC233DBDBC00DC188E /* ViewController.swift */,
+				14E42C1223472E5900D6C6FE /* CAShapeLayerViewController.swift */,
 				146056BE233DBDBC00DC188E /* Main.storyboard */,
 				146056C1233DBDBE00DC188E /* Assets.xcassets */,
 				146056C3233DBDBE00DC188E /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E42C1323472E5900D6C6FE /* CAShapeLayerViewController.swift in Sources */,
 				146056BD233DBDBC00DC188E /* ViewController.swift in Sources */,
 				146056B9233DBDBC00DC188E /* AppDelegate.swift in Sources */,
 				146056BB233DBDBC00DC188E /* SceneDelegate.swift in Sources */,
