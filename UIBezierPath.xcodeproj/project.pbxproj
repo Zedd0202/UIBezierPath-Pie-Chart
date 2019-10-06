@@ -14,7 +14,18 @@
 		146056C2233DBDBE00DC188E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146056C1233DBDBE00DC188E /* Assets.xcassets */; };
 		146056C5233DBDBE00DC188E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 146056C3233DBDBE00DC188E /* LaunchScreen.storyboard */; };
 		14E42C1323472E5900D6C6FE /* CAShapeLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E42C1223472E5900D6C6FE /* CAShapeLayerViewController.swift */; };
+		14ECDB0E2349C89C0047C23B /* UIBezierPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ECDB0D2349C89C0047C23B /* UIBezierPathTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14ECDB102349C89C0047C23B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146056AD233DBDBC00DC188E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 146056B4233DBDBC00DC188E;
+			remoteInfo = UIBezierPath;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		146056B5233DBDBC00DC188E /* UIBezierPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIBezierPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		146056C4233DBDBE00DC188E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		146056C6233DBDBE00DC188E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14E42C1223472E5900D6C6FE /* CAShapeLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAShapeLayerViewController.swift; sourceTree = "<group>"; };
+		14ECDB0B2349C89C0047C23B /* UIBezierPathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIBezierPathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14ECDB0D2349C89C0047C23B /* UIBezierPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathTests.swift; sourceTree = "<group>"; };
+		14ECDB0F2349C89C0047C23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		146056B2233DBDBC00DC188E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14ECDB082349C89C0047C23B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				146056B7233DBDBC00DC188E /* UIBezierPath */,
+				14ECDB0C2349C89C0047C23B /* UIBezierPathTests */,
 				146056B6233DBDBC00DC188E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				146056B5233DBDBC00DC188E /* UIBezierPath.app */,
+				14ECDB0B2349C89C0047C23B /* UIBezierPathTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +91,15 @@
 				146056C6233DBDBE00DC188E /* Info.plist */,
 			);
 			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		14ECDB0C2349C89C0047C23B /* UIBezierPathTests */ = {
+			isa = PBXGroup;
+			children = (
+				14ECDB0D2349C89C0047C23B /* UIBezierPathTests.swift */,
+				14ECDB0F2349C89C0047C23B /* Info.plist */,
+			);
+			path = UIBezierPathTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +122,24 @@
 			productReference = 146056B5233DBDBC00DC188E /* UIBezierPath.app */;
 			productType = "com.apple.product-type.application";
 		};
+		14ECDB0A2349C89C0047C23B /* UIBezierPathTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14ECDB142349C89C0047C23B /* Build configuration list for PBXNativeTarget "UIBezierPathTests" */;
+			buildPhases = (
+				14ECDB072349C89C0047C23B /* Sources */,
+				14ECDB082349C89C0047C23B /* Frameworks */,
+				14ECDB092349C89C0047C23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14ECDB112349C89C0047C23B /* PBXTargetDependency */,
+			);
+			name = UIBezierPathTests;
+			productName = UIBezierPathTests;
+			productReference = 14ECDB0B2349C89C0047C23B /* UIBezierPathTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +152,10 @@
 				TargetAttributes = {
 					146056B4233DBDBC00DC188E = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					14ECDB0A2349C89C0047C23B = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 146056B4233DBDBC00DC188E;
 					};
 				};
 			};
@@ -119,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				146056B4233DBDBC00DC188E /* UIBezierPath */,
+				14ECDB0A2349C89C0047C23B /* UIBezierPathTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +186,13 @@
 				146056C5233DBDBE00DC188E /* LaunchScreen.storyboard in Resources */,
 				146056C2233DBDBE00DC188E /* Assets.xcassets in Resources */,
 				146056C0233DBDBC00DC188E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14ECDB092349C89C0047C23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14ECDB072349C89C0047C23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14ECDB0E2349C89C0047C23B /* UIBezierPathTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14ECDB112349C89C0047C23B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 146056B4233DBDBC00DC188E /* UIBezierPath */;
+			targetProxy = 14ECDB102349C89C0047C23B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		146056BE233DBDBC00DC188E /* Main.storyboard */ = {
@@ -320,6 +398,46 @@
 			};
 			name = Release;
 		};
+		14ECDB122349C89C0047C23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BD2FZATPN;
+				INFOPLIST_FILE = UIBezierPathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zedd.UIBezierPathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIBezierPath.app/UIBezierPath";
+			};
+			name = Debug;
+		};
+		14ECDB132349C89C0047C23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9BD2FZATPN;
+				INFOPLIST_FILE = UIBezierPathTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zedd.UIBezierPathTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIBezierPath.app/UIBezierPath";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +455,15 @@
 			buildConfigurations = (
 				146056CA233DBDBE00DC188E /* Debug */,
 				146056CB233DBDBE00DC188E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14ECDB142349C89C0047C23B /* Build configuration list for PBXNativeTarget "UIBezierPathTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14ECDB122349C89C0047C23B /* Debug */,
+				14ECDB132349C89C0047C23B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
