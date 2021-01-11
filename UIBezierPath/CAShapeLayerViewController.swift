@@ -44,8 +44,7 @@ private class CAView: UIView, CAAnimationDelegate {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = 0
         animation.toValue = 1
-        animation.duration = 1
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.duration = 0.5
         animation.delegate = self
         let total = values.reduce(0, +)
         endAngle = (value / total) * (.pi * 2)
