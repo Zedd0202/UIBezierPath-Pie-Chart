@@ -59,8 +59,6 @@ private class CAView: UIView, CAAnimationDelegate {
         animation.duration = 0.5
         animation.delegate = self
         sliceLayer.add(animation, forKey: animation.keyPath)
-        
-        self.setNeedsDisplay()
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
