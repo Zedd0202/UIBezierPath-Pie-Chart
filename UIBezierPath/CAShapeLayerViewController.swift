@@ -37,27 +37,30 @@ private class CAView: UIView, CAAnimationDelegate {
     
     override func draw(_ rect: CGRect) {
         self.myCenter = CGPoint(x: rect.midX, y: rect.midY)
-        self.add(value: values[currentIndex])
+        self.startAnimation()
     }
     
-    func add(value: CGFloat) {
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.fromValue = 0
-        animation.toValue = 1
-        animation.duration = 0.5
-        animation.delegate = self
+    func startAnimation() {
+        let value = self.values[currentIndex]
         let total = values.reduce(0, +)
-        endAngle = (value / total) * (.pi * 2)
-        let path = UIBezierPath(arcCenter: self.myCenter, radius: 60, startAngle: startAngle, endAngle: startAngle + endAngle, clockwise: true)
+        self.endAngle = (value / total) * (.pi * 2)
+        let path = UIBezierPath(arcCenter: self.myCenter, radius: 60, startAngle: self.startAngle, endAngle: self.startAngle + self.endAngle, clockwise: true)
         let sliceLayer = CAShapeLayer()
         sliceLayer.path = path.cgPath
         sliceLayer.fillColor = nil
         sliceLayer.strokeColor = self.colors.randomElement()?.cgColor
         sliceLayer.lineWidth = 80
         sliceLayer.strokeEnd = 1
+        self.layer.addSublayer(sliceLayer)
+
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.fromValue = 0
+        animation.toValue = 1
+        animation.duration = 0.5
+        animation.delegate = self
         sliceLayer.add(animation, forKey: animation.keyPath)
         
-        self.layer.addSublayer(sliceLayer)
+        self.setNeedsDisplay()
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
@@ -65,7 +68,7 @@ private class CAView: UIView, CAAnimationDelegate {
         if isFinished && currentIndex < self.values.count - 1 {
             self.currentIndex += 1
             self.startAngle += endAngle
-            self.add(value: self.values[currentIndex])
+            self.startAnimation()
         }
     }
 }
